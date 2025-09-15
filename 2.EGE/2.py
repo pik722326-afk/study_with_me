@@ -8,16 +8,24 @@ for x in range(2): #Проверяем каждые переменные на с
     for y in range (2):
         for z in range (2):
             for  w in range (2):
-                F =(x<= y) or (not(w <= z)) #Преобразуем формулу
+                F = ((y <= w) == (x <= (not z))) and (x or w)#Преобразуем формулу
                 if F == 1: #Выводим значение F которые нам нужны
-                    print (x , y , z , w) #Выводим перименные
-
+                    print (x , y , z , w, F) #Выводим перименные
+for x in range(2):
+    for y in range (2):
+        for z in range (2):
+            for  w in range (2):
+                F = ((y <= w) == (x <= (not z))) and (x or w)
+                if F == 0:
+                    print (x , y , z , w, F)
+'''((y → w) ≡ (x → ¬z)) ∧ (x ∨ w)'''
 #Номер 1 (x∨¬y)∧¬(y≡z)∧¬w
 #(x or (not y)) and (not(y == z)) and (not w)
 
 #Номер 2 (х→y)∨¬(w→z)
 #(x<= y) or (not(w <= z))
 
+'''
 print('x y z w')
 for x in 0, 1:
     for y in 0, 1:
@@ -26,16 +34,18 @@ for x in 0, 1:
                 F = (not (x <= w)) or (y <= z) or (not (y))
                 if F == 0:
                     print(x, y, z, w, int(F))
-            """(x ∧ ¬y) ∨ (y ≡ z) ∨"""""
+'''
 
-            '""¬(x → w) ∨ (y → z) ∨ ¬y""'
-            ""'y ∧ (x ∨ z) ∨ ¬(y ∨ z) ∨ w"'
+'''(x ∧ ¬y) ∨ (y ≡ z) ∨'''
 
-            "(y → ¬(x → z)) ∨ w"
+'''¬(x → w) ∨ (y → z) ∨ ¬y'''
+""'y ∧ (x ∨ z) ∨ ¬(y ∨ z) ∨ w"'
 
-            """""(x ∧ ¬y) ∨ (x ≡ z) ∨ w"""""
+"(y → ¬(x → z)) ∨ w"
 
-            """¬(x → z) ∨ (y ≡ w) ∨ y"""
+"""""(x ∧ ¬y) ∨ (x ≡ z) ∨ w"""""
+
+"""¬(x → z) ∨ (y ≡ w) ∨ y"""
 
 """" ¬(x ∨ y) ∧ ¬w ∨ ¬(z ∨ w) ∧ y"""
 '''F = (not (x or y)) and (not w) or (not (z or w)) and y'''
