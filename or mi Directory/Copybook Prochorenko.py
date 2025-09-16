@@ -57,6 +57,7 @@ while True:
                 sleep(5 * 60)
         pas = input(choice(messages_error))
 print(f'Добро пожаловать, {user}.')'''
+# Номер 13
 '''from ipaddress import *
 R=[]
 for mask in range(32+1):
@@ -72,6 +73,7 @@ for ip in net:
     if '101' not in str(b):
         cnt+=1
 print(cnt)'''
+#№15
 '''#№15, 18595 (Уровень: Базовый)
 def F(x, A1, A2):
     C = 48 <= x <= 94
@@ -88,8 +90,6 @@ for A1 in M:
             R.append(A2 - A1)
 print(max(R)) #52.0 -> 52
 #Ответ: 52'''
-#ДЗ на 21.02.2025:
-#КЕГЭ № 8503 Апробация 17.05 (Уровень: Базовый)
 """def F(x, A):
     return ((x & 52 != 0) and (x & 36 == 0)) <= (x & A != 0)
 R = []
@@ -519,6 +519,7 @@ I = 1024000 * 5
 t = I/(a*b*c)
 print(t)#10'''
 #13, КЕГЭ № 10577 (Уровень: Базовый)
+"""
 from ipaddress import *
 R = []
 for mask in range(32+1):
@@ -527,3 +528,4 @@ for mask in range(32+1):
     if net1 == net2:
         R.append(mask)
 print(max(R))
+"""

@@ -61,3 +61,5 @@ for ip in net:
         cnt += 1
 print(cnt)'''#Answer: 43
 """
+#Домашка на 23.09.2025
+# Задание номер 5 https://stepik.org/lesson/1038432/step/1?unit=1060804
