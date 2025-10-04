@@ -63,3 +63,92 @@ print(cnt)'''#Answer: 43
 """
 #Домашка на 23.09.2025
 # Задание номер 5 https://stepik.org/lesson/1038432/step/1?unit=1060804
+
+# Задание №6 https://stepik.org/lesson/1038843/step/2?unit=1062794
+# Направо 120 Повтори 8 [Вперёд 4 Направо 60]
+"""import turtle as t
+t.screensize(500, 500)
+t.tracer(0)
+t.left(90)
+s = 20
+t.right(120)
+for i in range(8):
+    t.forward(4 * s)
+    t.right(60)
+t.up()
+for x in range(-100, 100):
+    for y in range(-100, 100):
+        t.goto(x * s, y * s)
+        t.dot(3, 'red')
+t.update()
+t.done()"""
+
+# Задание №6 https://stepik.org/lesson/1038843/step/3?unit=1062794
+
+# Повтори 2 [Вперёд 10 Направо 90 Вперёд 18 Направо 90]
+#   Поднять хвост
+#   Назад 6 Направо 90 Вперёд 9 Налево 90
+#   Опустить хвост
+#   Повтори 2 [Вперёд 17 Направо 90 Вперёд 5 Направо 90]
+import turtle as t
+t.screensize(1500, 1500)
+t.left(90)
+t.tracer(0)
+s = 30
+for i in range(2):
+    t.color('red')
+    t.forward(10 * s)
+    t.right(90)
+    t.forward(18 * s)
+    t.right(90)
+t.up()
+t.backward(6 * s)
+t.right(90)
+t.fd (9 * s)
+t.right(90)
+t.down()
+for i in range(2):
+    t.color('blask')
+    t.forward(17 * s)
+    t.right(90)
+    t.fd (5 * s)
+    t.right(90)
+t.up ()
+for x in range(-50, 50):
+    for y in range(-50, 50):
+        t.goto(x * s, y * s)
+        t.dot(2,'purple')
+t.update()
+t.done()
+
+"""def convert(n, b):
+    r = ''
+    while n > 0:
+        r += str(n % b)
+        n //= b
+    return r[::-1]
+
+M = []
+for n in range(1, 10000):
+    s = convert(n, 3)
+    if n % 3 == 0:
+        z = ''
+        for x in s:
+            z += x * 2
+    else:
+        s = s.replace('0', '*')
+        s = s.replace('1', '+')
+        s = s.replace('2', '0')
+        s = s.replace('*', '1')
+        s = s.replace('+', '2')
+        z = ''
+        for x in s:
+            z += x * 2
+    r = int(z, 3)
+    print(r)
+    if r > 120:
+        M.append(n)
+print(min(M))"""
+
+# Задание №6 https://stepik.org/lesson/1038843/step/3?unit=1062794
+

@@ -6,6 +6,8 @@
 '''
 Запустите бота: https://t.me/ilandroxxy_bot и нажмите кнопку: "📚 Получить конспект"
 '''
+from lib2to3.pytree import convert
+
 # endregion Место для вашего конспекта ⬆️
 
 # Переводы в различные системы исчисления
@@ -61,6 +63,35 @@ print(int('3B9ACA00', 16))  # 10**9
 print(convert(n, 3))  # 2120200200021010001
 print(int('2120200200021010001', 3))  # 10**9
 """
+
+"""def convert(n, b):
+    r = ''
+    while n > 0:
+        r += str(n % b)
+        n //= b
+    return r[::-1]
+
+M = []
+for n in range(1, 10000):
+    s = convert(n, 3)
+    if n % 3 == 0:
+        z = ''
+        for x in s:
+            z += x * 2
+    else:
+        s = s.replace('0', '*')
+        s = s.replace('1', '+')
+        s = s.replace('2', '0')
+        s = s.replace('*', '1')
+        s = s.replace('+', '2')
+        z = ''
+        for x in s:
+            z += x * 2
+    r = int(z, 3)
+    print(r)
+    if r > 120:
+        M.append(n)
+print(min(M))"""
 
 # Домашка 5 номер: https://stepik.org/lesson/1038432/step/1?unit=1060804
 
