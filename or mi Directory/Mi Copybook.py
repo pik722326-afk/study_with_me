@@ -80,7 +80,6 @@ for x in range(-100, 100):
         t.dot(3, 'red')
 t.update()
 t.done()"""
-
 # Домашка №6 шаг 3 https://stepik.org/lesson/1038843/step/3?unit=1062794
 """# Повтори 2 [Вперёд 10 Направо 90 Вперёд 18 Направо 90]
 #   Поднять хвост
@@ -121,7 +120,6 @@ for x in range(-50, 50):
         t.dot(2,'purple')
 t.update()
 t.done()"""
-
 
 #Домашка по срезам
 #3.5 Домашка: Строки str(). https://stepik.org/lesson/1309454/step/1?unit=1324570
@@ -236,3 +234,5 @@ print(int('3B9ACA00', 16))  # 10**9
 print(convert(n, 3))  # 2120200200021010001
 print(int('2120200200021010001', 3)) # 10**9 
 """
+
+

@@ -66,6 +66,144 @@ for x in range(-50, 50):
 t.update()
 t.done()"""
 
+#Домашка №6 шаг 4 https://stepik.org/lesson/1038843/step/4?unit=1062794
+"""#Повтори 2 [Вперёд 7 Направо 60 Вперёд 12 Направо 120]
+# Поднять хвост
+# Вперёд 7 Направо 60
+# Опустить хвост
+# Повтори 2 [Вперёд 5 Направо 120 Вперёд 10 Направо 60]
+# не включая точки на границах этого пересечения.
+
+import turtle as t
+t.screensize(5000, 5000)
+t.tracer(0)
+t.left(90)
+s = 20
+for i in range(2):
+    t.color('red')
+    t.forward(7 * s)
+    t.right(60)
+    t.forward(12 * s)
+    t.right(120)
+t.up()
+t.forward(7 * s)
+t.right(60)
+t.down()
+for i in range(2):
+    t.color('red')
+    t.forward(5 * s)
+    t.right(120)
+    t.forward(10 * s)
+    t.right(60)
+t.up()
+for x in range(-50, 50):
+    for y in range(-50, 50):
+        t.goto(x * s, y * s)
+        t.dot(2,'purple')
+t.update()
+t.done()"""
+#Домашка №6 шаг 5 https://stepik.org/lesson/1038843/step/5?unit=1062794
+"""# Определите периметр
+# области пересечения фигур,
+# ограниченных заданными алгоритмом линиями.
+
+#Повтори 10 [Вперёд 22 Направо 90 Вперед 16 Направо 90]
+#Поднять хвост
+#Вперед 1 Направо 90 Вперёд 1 Налево 90
+#Опустить хвост
+#Повтори 10 [Вперёд 72 Направо 90 Вперёд 79 Направо 90]
+
+import turtle as t
+t.screensize(5000, 5000)
+t.tracer(0)
+t.left(90)
+s = 20
+for i in range(10):
+    t.color('red')
+    t.forward(22 * s)
+    t.rt(90)
+    t.fd(16 * s)
+    t.right(90)
+t.up()
+t.fd(1  * s)
+t.right(90)
+t.forward(1*s)
+t.left(90)
+t.down()
+for i in range(10):
+    t.color('red')
+    t.forward(72 * s)
+    t.rt(90)
+    t.fd(79 * s)
+    t.right(90)
+t.up()
+for x in range(-50, 50):
+    for y in range (-50, 50):
+        t.goto(x * s, y * s)
+        t.dot(2, "purple")
+t.update()
+t.done()"""
+#Домашка №6 шаг 7 https://stepik.org/lesson/1038843/step/7?unit=1062794
+"""#Сколько точек с целочисленными координатами находятся внутри получившейся фигуры?
+#Точки на внешних и внутренних линиях учитывать не нужно.
+#Повтори 6 [Повтори 3 [Вперед 7 Направо 120] Направо 60]
+import turtle as t
+t.screensize(-5000, 5000)
+t.tracer(0)
+t.left(90)
+s = 20
+for i in range(6):
+    for i in range(3):
+        t.color('red')
+        t.fd(7*s)
+        t.right(120)
+    t.rt(60)
+t.up()
+for x in range (-50, 50):
+    for y in range (-50, 50):
+        t.goto(x * s, y * s)
+        t.dot(2, "purple")
+t.update()
+t.done()"""
+#Домашка №6 шаг 8 https://stepik.org/lesson/1038843/step/8?unit=1062794
+
+#Повтори 2 [Вперёд 8 Направо 90 Вперёд 18 Направо 90]
+#Поднять хвост
+#Вперёд 4 Направо 90 Вперёд 10 Налево 90
+#Опустить хвост
+#Повтори 2 [Вперёд 17 Направо 90 Вперёд 7 Направо 90]
+#включая точки на линиях.
+import turtle as t
+t.screensize(5000, 5000)
+t.tracer(0)
+t.left(90)
+s = 20
+for i in range(2):
+    t.forward(8 *s)
+    t.right(90)
+    t.fd(18 * s)
+    t.right(90)
+t.up()
+t.fd(4 * s)
+t.right(90)
+t.fd(10 * s)
+t.right(90)
+t.down()
+for i in range(2):
+    t.color('red')
+    t.forward(17 *s)
+    t.right(90)
+    t.fd(7 * s)
+    t.right(90)
+t.up()
+for x in range(-50, 50):
+    for y in range(-50, 50):
+        t.goto(x * s, y * s)
+        t.dot(2, "purple")
+t.update()
+t.done()
+
+
 # Черепахе был дан для исполнения следующий алгоритм.
 # Повтори 2 [Вперёд 14 Налево 270 Назад 12 Направо 90]
 # Поднять хвост
@@ -75,7 +213,7 @@ t.done()"""
 
 #Условия
 
-import turtle as t  # Подключение библиотеки с коротким именем t
+"""import turtle as t  # Подключение библиотеки с коротким именем t
 t.screensize(5000, 5000)  # Для ползунков по холсту
 t.tracer(0)  # Отключает анимацию отрисовки / мгновенная отрисовка
 t.left(90)  # Необходимо сделать по условию, чтобы черепаха смотрела "вверх"
@@ -116,6 +254,7 @@ for x in range(-50, 50):  # Перебираем координаты точек
 
 t.update()  # Для корректной работы t.tracer()
 t.done()  # Для того, чтобы зафиксировать окно отрисовки
+"""
 
 
 
