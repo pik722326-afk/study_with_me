@@ -452,7 +452,7 @@ for x in alphabet[:21]:
         print((A+B+C)//20)
         break#72450445'''
 #14.2
-'''R = []
+"""R = []
 def convert(a, b):
     alphabet = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
     r = ''
@@ -466,7 +466,7 @@ for x in range(1, 2301):
     C = x
     if str(convert((A + B - C), 7)).count('0') == 200:
         R.append(x)
-print(max(R))'''
+print(max(R))"""
 #15
 '''def F(x):
     B = 36 <= x <= 75

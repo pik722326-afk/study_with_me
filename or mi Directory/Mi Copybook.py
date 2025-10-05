@@ -61,12 +61,10 @@ for ip in net:
         cnt += 1
 print(cnt)'''#Answer: 43
 """
-#Домашка на 23.09.2025
-# Задание номер 5 https://stepik.org/lesson/1038432/step/1?unit=1060804
 
-# Задание №6 https://stepik.org/lesson/1038843/step/2?unit=1062794
-# Направо 120 Повтори 8 [Вперёд 4 Направо 60]
-"""import turtle as t
+# Домашка №6 шаг 2 https://stepik.org/lesson/1038843/step/2?unit=1062794
+"""# Направо 120 Повтори 8 [Вперёд 4 Направо 60]
+import turtle as t
 t.screensize(500, 500)
 t.tracer(0)
 t.left(90)
@@ -83,15 +81,18 @@ for x in range(-100, 100):
 t.update()
 t.done()"""
 
-# Задание №6 https://stepik.org/lesson/1038843/step/3?unit=1062794
-
-# Повтори 2 [Вперёд 10 Направо 90 Вперёд 18 Направо 90]
+# Домашка №6 шаг 3 https://stepik.org/lesson/1038843/step/3?unit=1062794
+"""# Повтори 2 [Вперёд 10 Направо 90 Вперёд 18 Направо 90]
 #   Поднять хвост
 #   Назад 6 Направо 90 Вперёд 9 Налево 90
 #   Опустить хвост
 #   Повтори 2 [Вперёд 17 Направо 90 Вперёд 5 Направо 90]
+# Cколько точек с целочисленными координатами будут находиться внутри пересечения фигур, 
+# ограниченных заданными алгоритмом линиями, 
+# включая точки на линиях
+#       Ответ 66
 import turtle as t
-t.screensize(1500, 1500)
+t.screensize(5000, 5000)
 t.left(90)
 t.tracer(0)
 s = 30
@@ -104,11 +105,11 @@ for i in range(2):
 t.up()
 t.backward(6 * s)
 t.right(90)
-t.fd (9 * s)
-t.right(90)
+t.forward (9 * s)
+t.left(90)
 t.down()
 for i in range(2):
-    t.color('blask')
+    t.color('red')
     t.forward(17 * s)
     t.right(90)
     t.fd (5 * s)
@@ -119,36 +120,119 @@ for x in range(-50, 50):
         t.goto(x * s, y * s)
         t.dot(2,'purple')
 t.update()
-t.done()
+t.done()"""
 
-"""def convert(n, b):
+
+#Домашка по срезам
+#3.5 Домашка: Строки str(). https://stepik.org/lesson/1309454/step/1?unit=1324570
+#Номер 5
+"""#abcdefghijklmnop
+a = input()
+for x in a [0::2]:
+    print (x)"""
+#Номер 6
+"""z = 0
+a = input()
+for x in a [0::1]:
+    z += int(x)
+print(z)"""
+#Номер 7
+"""a = input()
+R = 0
+V = 0
+for x in a:
+    if x == "+" :
+        R += 1
+    else :
+        R += 0
+    if x == "*" :
+        V += 1
+print ("Символ + встречается",R,"раз")
+print ("Символ * встречается",V,"раз")"""
+#Номер 8
+"""# https://stepik.org/lesson/1309454/step/8?unit=1324570
+#общее количество символов в строке;
+#исходную строку, повторенную 3 раза;
+#первый символ строки;
+#первые три символа строки;
+#последние три символа строки;
+#строку в обратном порядке;
+#строку с удаленным первым и последним символом.
+a = input()
+b = ""
+summ = 0
+len (a)
+print (len(a))
+c = a * 3
+print (c)
+print (a[0])
+print (a[0:3])
+print (a[-3:])
+c = a[::-1]
+print (c)
+print (a[1:-1])
+# Вводные (abcdefghijklmnopqrstuvwxyz)
+# Ответ
+#26
+#abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+#a
+#abc
+#xyz
+#zyxwvutsrqponmlkjihgfedcba
+#bcdefghijklmnopqrstuvwxy"""
+#Номер 10
+"""#третий символ этой строки;
+#предпоследний символ этой строки;
+#первые пять символов этой строки;
+#всю строку, кроме последних двух символов;
+#все символы с четными индексами;
+#все символы с нечетными индексами;
+#все символы в обратном порядке;
+#все символы строки через один в обратном порядке, начиная с последнего
+
+a = input()
+v = ""
+print (a[2])
+print (a[-2])
+print (a[0:5])
+print (a[0:-2])
+print (a[0::2])
+print (a[1::2])
+c = a [::-1]
+print (c)
+for i in range(len(a) - 1, -1, -2):
+    v += a[i]
+print(v)
+#Вводные (abcdefghijklmnopqrstuvwxyz)
+# Вывод 
+#c
+#y
+#abcde
+#abcdefghijklmnopqrstuvwx
+#acegikmoqsuwy
+#bdfhjlnprtvxz
+#zyxwvutsrqponmlkjihgfedcba
+#zxvtrpnljhfdb"""
+
+# Функция convert
+"""
+alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
+def convert(n, b):
     r = ''
     while n > 0:
-        r += str(n % b)
+        r += alp[n % b]
         n //= b
     return r[::-1]
+n = 10**9
+print(convert(n, 2))  # 111011100110101100101000000000
+print(int('111011100110101100101000000000', 2))  # 10**9
 
-M = []
-for n in range(1, 10000):
-    s = convert(n, 3)
-    if n % 3 == 0:
-        z = ''
-        for x in s:
-            z += x * 2
-    else:
-        s = s.replace('0', '*')
-        s = s.replace('1', '+')
-        s = s.replace('2', '0')
-        s = s.replace('*', '1')
-        s = s.replace('+', '2')
-        z = ''
-        for x in s:
-            z += x * 2
-    r = int(z, 3)
-    print(r)
-    if r > 120:
-        M.append(n)
-print(min(M))"""
+print(convert(n, 8))  # 7346545000
+print(int('7346545000', 8))  # 10**9
 
-# Задание №6 https://stepik.org/lesson/1038843/step/3?unit=1062794
+print(convert(n, 16))  # 3B9ACA00
+print(int('3B9ACA00', 16))  # 10**9
 
+print(convert(n, 3))  # 2120200200021010001
+print(int('2120200200021010001', 3)) # 10**9 
+"""
