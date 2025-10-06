@@ -3,6 +3,19 @@
 # 📘 Разборы 14 номеров по информатике: https://t.me/informatika_kege_itpy/360?comment=1535
 
 # region Место для вашего конспекта ⬇️
+
+#https://education.yandex.ru/ege/task/fbfb743a-c36a-4cbc-9d9e-dcb76c353dda
+#Ответ 21
+alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
+def convert(n, b):
+    r = ''
+    while n > 0:
+        r += alp[n % b]
+        n //= b
+    return r[::-1]
+a = 5**23 + 25**12 - 10
+v = convert (a, 5)
+print (v.count("4"))
 '''
 Запустите бота: https://t.me/ilandroxxy_bot и нажмите кнопку: "📚 Получить конспект"
 '''
