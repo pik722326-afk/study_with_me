@@ -49,11 +49,67 @@ for x in 0, 1:
 
 """" ¬(x ∨ y) ∧ ¬w ∨ ¬(z ∨ w) ∧ y"""
 '''F = (not (x or y)) and (not w) or (not (z or w)) and y'''
+
+
+
+
 '''
 Запустите бота: https://t.me/ilandroxxy_bot и нажмите кнопку: "📚 Получить конспект"
 '''
 # Место для вашего конспекта ⬆️
 
+
+print('x y z w')
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            for w in 0, 1:
+                F = (x or y) and (not(y == z)) and (not w)
+                if F == 1:
+                    print(x, y, z, w)
+'''
+from tkinter import image_names
+
+# Решу ЕГЭ № 18483 (Уровень: Базовый)
+'''
+print('x y z w F')
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            for w in 0, 1:
+                F = ((y <= w) == (x <= (not z))) and (x or w)
+                if F == 0:
+                    print(x, y, z, w, int(F))
+
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            for w in 0, 1:
+                F = ((y <= w) == (x <= (not z))) and (x or w)
+                if F == 1:
+                    print(x, y, z, w, int(F))
+'''
+# № 20569 (Уровень: Базовый)
+'''
+print('x y z w F')
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            for w in 0, 1:
+                F = ((w <= z) == (x <= (not y))) and (x or z)
+                if F == 0:
+                    print(x, y, z, w, int(F))
+
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            for w in 0, 1:
+                F = ((w <= z) == (x <= (not y))) and (x or z)
+                if F == 1:
+                    print(x, y, z, w, int(F))
+'''
+
+
 # Домашка 2 номер: https://stepik.org/lesson/1038536/step/1?unit=1062771
 
-# Практика 2 номер: https://stepik.org/lesson/1152671/step/1?unit=1164793
+# Практика 2 номер: https://stepik.org/lesson/1152671/step/1?unit=1164793 '''

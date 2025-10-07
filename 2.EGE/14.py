@@ -6,7 +6,7 @@
 
 #https://education.yandex.ru/ege/task/fbfb743a-c36a-4cbc-9d9e-dcb76c353dda
 #Ответ 21
-alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
+"""alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
 def convert(n, b):
     r = ''
     while n > 0:
@@ -15,7 +15,22 @@ def convert(n, b):
     return r[::-1]
 a = 5**23 + 25**12 - 10
 v = convert (a, 5)
-print (v.count("4"))
+print (v.count("4"))"""
+
+"""alp = sorted ("0123456789qwertyuiopasdfghjklzxcvbnm")
+def converted (n, b):
+    r = ""
+    while n>0:
+        r += alp[n % b]
+        n //= b
+    return r[::-1]
+a= 5**23 + 25**12
+v = converted(a, 5)
+print (v.count("0"))"""
+
+
+
+
 '''
 Запустите бота: https://t.me/ilandroxxy_bot и нажмите кнопку: "📚 Получить конспект"
 '''
