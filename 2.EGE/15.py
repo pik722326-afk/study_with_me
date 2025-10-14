@@ -3,6 +3,21 @@
 # 📘 Разборы 15 номеров по информатике: https://t.me/informatika_kege_itpy/360?comment=1550
 
 # region Место для вашего конспекта ⬇️
+
+
+# Дима https://kompege.ru/task 20577
+
+
+#(x & A ≠ 0) → ((x & 698 = 0) → (x & 321 ≠ 0))
+def F (x , A):
+    return (x & A != 0) <= ((x & 698 == 0) <= (x & 321 != 0))
+
+RES = []
+for A in range (1, 5000):
+    if all(F(x, A) for x in range (1, 10000)):
+        RES.append(A)
+print (max(RES))
+
 '''
 Запустите бота: https://t.me/ilandroxxy_bot и нажмите кнопку: "📚 Получить конспект"
 '''
