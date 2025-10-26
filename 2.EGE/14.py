@@ -188,7 +188,7 @@ print (max(k))
 """
 
 # № 227 (Уровень: Базовый)
-"""
+
 alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
 def convert(n, b):
     r = ''
@@ -200,7 +200,7 @@ f = 4**2015 + 2**2015 - 15
 s = convert(f, 2)
 s = s.count("1")
 print (s)
-"""
+
 
 
 

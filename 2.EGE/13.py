@@ -183,33 +183,43 @@ print (cnt)
 # № 10715 (Уровень: Средний)
 #Сеть задана IP-адресом 192.168.32.160 и маской сети 255.255.255.240
 #Сколько в этой сети IP-адресов, для которых количество нулей в двоичной записи IP-адреса больше 21?
-from ipaddress import *
+"""from ipaddress import *
 net = ip_network("192.168.32.160/255.255.255.240", 0)
 cnt = 0
 for ip in net :
     s = f"{ip:b}"
     if s.count('0') >= 22:
         cnt += 1
-        print(cnt, s)
+        print(cnt, s)"""
 #print (cnt, s)
 
 #№ 11780 (Уровень: Базовый)
 #Сеть задана IP-адресом 185.8.0.0 и маской сети 255.255.128.0
 #Определите максимальную сумму единиц в двоичной записи IP-адреса в этой сети.
-from ipaddress import *
+"""from ipaddress import *
 net = ip_network("185.8.0.0/255.255.128.0", 0)
 cnt = 0
 for ip in net:
     s = f"{ip:b}"
     cnt += 1
-    print (cnt)
+    print (cnt)"""
+
+
+
+from ipaddress import *
+max = 0
+for mask in range(32+1):
+    net = ip_network(f"165.112.200.70/{mask}", 0)
+    if str(net) == f"165.112.175.80/{mask}":
+        max = mask(max, mask)
+print(max)
 
 
 
 # #
 # region Разобрать: *************************************************************
 
-
+a = int(input())
 # endregion Разобрать: *************************************************************
 # #
 # #

@@ -162,7 +162,7 @@ print(max(RES))  # 1376
 
 # Для найденных значений x и y вычислите частное от деления значения арифметического
 # выражения на 181 и укажите его в ответе в десятичной системе счисления.
-'''
+"""
 RES = []
 alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
 for x in alp[:7]:
@@ -172,7 +172,7 @@ for x in alp[:7]:
         if (A + B) % 181 == 0:
             RES.append((A + B) // 181)
 print(min(RES))  # 148
-'''
+"""
 
 '''
 alp = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')

@@ -300,7 +300,7 @@ for x in range (-50,50):
 t.update()
 t.done()"""
 # Домашка №6 шаг 14 https://stepik.org/lesson/1038843/step/14?unit=1062794
-"""#Повтори 2 [Вперёд 13 Направо 90 Вперёд 20 Направо 90]
+#Повтори 2 [Вперёд 13 Направо 90 Вперёд 20 Направо 90]
 #Поднять хвост
 #Вперёд 8 Направо 90 Назад 3 Налево 90
 #Опустить хвост
@@ -335,7 +335,7 @@ for x in range(-50, 50):
         t.goto(x * s, y * s)
         t.dot (2, "purple")
 t.update()
-t.done()"""
+t.done()
 # Домашка №6 шаг 15 https://stepik.org/lesson/1038843/step/15?unit=1062794
 """import turtle as t
 t.screensize(5000,5000)
