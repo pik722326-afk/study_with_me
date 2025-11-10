@@ -9,24 +9,25 @@
 # endregion Место для вашего конспекта ⬆️
 
 
-'''
-s = 'abc'
+
+"""s = 'abc'
 cnt = 0
 for a in s:
     for b in s:
         for c in s:
             cnt += 1
-            print(cnt, a, b, c)
-'''
+            print(cnt, a, b, c)"""
 
 
-'''
+
+"""
 from itertools import product
 
 for p in product('abc', repeat=3):
     word = ''.join(p)
     print(p, word)
-'''
+"""
+
 
 '''
 from itertools import permutations
@@ -107,11 +108,44 @@ for p in product('0123456789AB', repeat=5):
 print(cnt)
 '''
 
+
+
 # endregion Урок: *************************************************************
 # #
 # #
 # region Разобрать: *************************************************************
 
+# № 8602 (Уровень: Базовый)
+"""
+from itertools import product
+cnt = 0
+R = []
+for p in product('АЕКНС', repeat=6):
+    word = ''.join(p)
+    cnt += 1
+    if word == "СЕНЕКА":
+        print(cnt)
+"""
+
+
+RES = []
+from itertools import product
+cnt = 0
+R = []
+for p in product(sorted('ПЯТЬДНЕЙ'), repeat=4):
+    word = ''.join(p)
+    if (not word ["П","Т","Д","Н","Й","Ь"]):
+        cnt += 1
+        print (cnt, word)
+#птднй
+#ПТДНЙ
+#valid = [w for w in words if not any(ch in vowels for ch in w) and len(set(w)) == 4]
+
+"""from itertools import permutations
+for p in permutations('ПЯТЬДНЕЙ', r=4):
+    word = ''.join(p)
+    if word == (not "ПТДНЙ"):
+        print(word)"""
 
 # endregion Разобрать: *************************************************************
 # #
